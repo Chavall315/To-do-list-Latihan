@@ -98,7 +98,7 @@ const index = () => {
             renderItem={({ item }) => (
               <View style={tw`bg-gray-800 p-4 flex-row justify-between rounded-lg mb-2`}>
                 <TouchableOpacity onPress={() => toggleTaskCompleted(item.id)}>
-                  <Ionicons name={item.completed ? 'checkbox' : 'square-outline'} size={30} color={'white'} style={tw`p-2`} />
+                  <Ionicons name={item.completed ? 'checkbox' : 'square-outline'} size={24} color={item.completed ? 'green' : 'gray'}/>
                 </TouchableOpacity>
                 <Text style={tw`text-white p-2`}>{item.title}</Text>
                 <View style={tw`flex-row gap-2`}>
